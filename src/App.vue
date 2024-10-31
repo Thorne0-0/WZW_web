@@ -1,5 +1,12 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+import {ref,reactive} from 'vue'
+
+const value = ref()
+const items = reactive([])
+const search = (query:any) => {
+  console.log(query)
+}
 </script>
 
 <template>
@@ -10,6 +17,7 @@ import HelloWorld from './components/HelloWorld.vue'
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
+    <Button label="Submit" />
   </div>
   <HelloWorld msg="Vite + Vue" />
 </template>
