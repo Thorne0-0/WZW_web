@@ -2,10 +2,8 @@
 import HelloWorld from './components/HelloWorld.vue'
 import {ref,reactive} from 'vue'
 
-const value = ref()
-const items = reactive([])
-const search = (query:any) => {
-  console.log(query)
+const toggleDarkMode = () =>{
+  document.documentElement.classList.toggle('my-app-dark');
 }
 </script>
 
@@ -17,7 +15,7 @@ const search = (query:any) => {
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
-    <Button label="Submit" />
+    <Button label="Toggle Dark Mode" @click="toggleDarkMode()"/>
   </div>
   <HelloWorld msg="Vite + Vue" />
 </template>
