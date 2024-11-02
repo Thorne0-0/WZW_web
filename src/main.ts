@@ -10,7 +10,7 @@ app.use(PrimeVue,{
     theme: {
         preset: Aura,
         options: {
-            prefix: 'p',
+            prefix: 'wzw',
             darkModeSelector: '.my-app-dark',
             cssLayer: false
         }
