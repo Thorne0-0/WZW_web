@@ -8,14 +8,14 @@ const toggleDarkMode = () =>{
 </script>
 
 <template>
-  <div>
+  <div class="flex gap-4">
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
-    <Button label="Toggle Dark Mode" @click="toggleDarkMode()"/>
+    <Button class="text-blue-300" label="Toggle Dark Mode" @click="toggleDarkMode()"/>
   </div>
   <HelloWorld msg="Vite + Vue" />
 </template>
