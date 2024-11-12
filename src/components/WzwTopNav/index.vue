@@ -36,7 +36,7 @@
                 <RiSunLine v-show="!isDark" size="20px" color="#0ea5e9" class="my-icon" />
                 <RiMoonLine v-show="isDark" size="20px" color="#0ea5e9" class="my-icon" />
             </div>
-            <p>Wzw Top Nav</p>
+            <p>Wzw Top Nav111</p>
 
         </div>
 
