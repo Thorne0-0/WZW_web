@@ -1,6 +1,7 @@
 <template>
     <div>
-        Wzw Top Nav
+        <WzwTopNav></WzwTopNav>
+        <router-link to="/">Home</router-link>
     </div>
 </template>
 

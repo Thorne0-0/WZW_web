@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 import {ref,reactive} from 'vue'
+import Layout from '@/layout/index.vue'
 
 const toggleDarkMode = () =>{
   document.documentElement.classList.toggle('my-app-dark');
@@ -8,6 +9,7 @@ const toggleDarkMode = () =>{
 </script>
 
 <template>
+  <Layout></Layout>
   <div class="flex gap-4">
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
