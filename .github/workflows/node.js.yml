@@ -1,5 +1,5 @@
 
-name: Build app and deploy to Tencent
+name: Build app and deploy to Alibaba
 on:
   #监听push操作
   push:
@@ -21,6 +21,10 @@ jobs:
       run: npm install
     - name: npm run build
       run: npm run build
+      - name: Test DNS resolution
+      run: nslookup ${{ secrets.USER_HOST }}
+    - name: Test network connectivity
+      run: ping -c 4 ${{ secrets.USER_HOST }}
     # 命名这个任务为发布Deploy
     - name: Deploy
       # 因为构建之后，需要把代码上传到服务器上，所以需要连接到ssh，并且做一个拷贝操作
