@@ -2,7 +2,7 @@
     <div class="px-10 w-full h-16 bg-white flex items-center justify-between border-solid border-b-2 border-gray-200">
         <div class="flex items-center">
             <img src="/vite.svg" class="logo" alt="Vite logo" />
-            <div class="text-xl ml-4 font-semibold text-slate-700">王某人的网站</div>
+            <div class="text-xl ml-4 font-semibold text-slate-700">王某人的网站11</div>
         </div>
         <div>
             <ul class="flex items-center">
