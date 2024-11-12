@@ -10,5 +10,8 @@ declare module 'vue' {
     AutoComplete: typeof import('primevue/autocomplete')['default']
     Button: typeof import('primevue/button')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
+    WzwTopNav: typeof import('./src/components/WzwTopNav/index.vue')['default']
   }
 }
