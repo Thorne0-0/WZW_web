@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@primevue/themes": "^4.1.1",
+    "@remixicon/vue": "^4.5.0",
     "@types/node": "^22.8.7",
     "primevue": "^4.1.1",
     "sass": "^1.80.6",

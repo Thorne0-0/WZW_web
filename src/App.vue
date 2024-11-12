@@ -3,9 +3,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import {ref,reactive} from 'vue'
 import Layout from '@/layout/index.vue'
 
-const toggleDarkMode = () =>{
-  document.documentElement.classList.toggle('my-app-dark');
-}
+
 </script>
 
 <template>
@@ -17,7 +15,7 @@ const toggleDarkMode = () =>{
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
-    <Button class="text-blue-300" label="Toggle Dark Mode" @click="toggleDarkMode()"/>
+    <Button class="text-blue-300" label="Toggle Dark Mode" />
   </div>
   <HelloWorld msg="Vite + Vue" />
 </template>

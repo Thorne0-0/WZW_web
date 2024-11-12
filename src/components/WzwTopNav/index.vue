@@ -14,8 +14,8 @@
 
                     <div class="absolute top-10 pt-6 -left-4 w-40">
                         <ul :class="item.children.length > 0 && hoverOneIndex === index
-                                ? 'block'
-                                : 'hidden'
+                            ? 'block'
+                            : 'hidden'
                             " class="rounded-lg bg-white border-solid border border-gray-300 shadow-md">
                             <li class="px-4 py-2" v-for="(childrenItem, childrenIndex) in item.children"
                                 :class="hoverTwoIndex === childrenIndex ? 'bg-slate-400' : 'bg-slate-100'"
@@ -29,12 +29,24 @@
                 </li>
             </ul>
         </div>
-        <div>Wzw Top Nav</div>
+
+
+        <div class="flex items-center">
+            <div class="mr-4 p-1 flex border-2 border-[#0ea5e9] border-solid rounded-lg" @click="toggleDarkMode()">
+                <RiSunLine v-show="!isDark" size="20px" color="#0ea5e9" class="my-icon" />
+                <RiMoonLine v-show="isDark" size="20px" color="#0ea5e9" class="my-icon" />
+            </div>
+            <p>Wzw Top Nav</p>
+
+        </div>
+
     </div>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
+
+import { RiSunLine, RiMoonLine } from '@remixicon/vue';
 const topNavList = ref<any[]>([
     {
         name: "index",
@@ -90,9 +102,16 @@ const hoverOneIndex = ref<number>(-1);
 const selectedTwoIndex = ref<number>(0)
 const hoverTwoIndex = ref<number>(-1);
 
+const isDark = ref<boolean>(false)
+
 onMounted(() => {
     selectedOneIndex.value = 0;
 });
+
+const toggleDarkMode = () =>{
+  document.documentElement.classList.toggle('my-app-dark');
+  isDark.value = !isDark.value
+}
 
 /**
  * @description 鼠标点击选中一级菜单

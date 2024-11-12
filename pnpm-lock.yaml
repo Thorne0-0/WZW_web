@@ -11,6 +11,9 @@ importers:
       '@primevue/themes':
         specifier: ^4.1.1
         version: 4.1.1
+      '@remixicon/vue':
+        specifier: ^4.5.0
+        version: 4.5.0(vue@3.5.12(typescript@5.6.3))
       '@types/node':
         specifier: ^22.8.7
         version: 22.8.7
@@ -370,6 +373,11 @@ packages:
   '@primevue/themes@4.1.1':
     resolution: {integrity: sha512-ec2gBN2vP0ydGtGAzC0nYCFqYN7CzvXxnlJqcvcPIo3rP/pcdj+FkzAe3y2DMG3OorYtqdzoyGtBefQrx3v5ag==}
     engines: {node: '>=12.11.0'}
+
+  '@remixicon/vue@4.5.0':
+    resolution: {integrity: sha512-pXIfHwk8LbKI1mresIx0ifwj3+i7+3Ns0AAPuXhQvGnnrNfbFTyNt+x9HcNxGVIKc9r+d15e8aMDSyGO5s/aVQ==}
+    peerDependencies:
+      vue: '>= 3'
 
   '@rollup/pluginutils@5.1.3':
     resolution: {integrity: sha512-Pnsb6f32CD2W3uCaLZIzDmeFyQ2b8UWMFI7xtwUezpcGBDVDW6y9XgAWIlARiGAo6eNF5FK5aQTr0LFyNyqq5A==}
@@ -1377,6 +1385,10 @@ snapshots:
   '@primevue/themes@4.1.1':
     dependencies:
       '@primeuix/styled': 0.2.0
+
+  '@remixicon/vue@4.5.0(vue@3.5.12(typescript@5.6.3))':
+    dependencies:
+      vue: 3.5.12(typescript@5.6.3)
 
   '@rollup/pluginutils@5.1.3(rollup@4.24.3)':
     dependencies:
