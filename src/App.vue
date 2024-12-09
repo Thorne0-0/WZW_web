@@ -7,8 +7,11 @@ import Layout from '@/layout/index.vue'
 </script>
 
 <template>
-  <Layout></Layout>
-  <div class="flex gap-4">
+  <div class="dark:bg-dkBg h-screen">
+    <Layout></Layout>
+
+  </div>
+  <!-- <div class="flex gap-4">
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
@@ -16,8 +19,8 @@ import Layout from '@/layout/index.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
     <Button class="text-blue-300" label="Toggle Dark Mode" />
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  </div> -->
+  <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
 
 <style scoped>
@@ -33,4 +36,5 @@ import Layout from '@/layout/index.vue'
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
+
 </style>
